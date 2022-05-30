@@ -1,19 +1,74 @@
 $fonts-path: '../fonts/';
-$roboto-path: $fonts-path + 'Roboto/';
+$manrope-path: $fonts-path + 'Manrope/';
+$cera-cond-pro-path: $fonts-path + 'CeraCondensedPro/';
 
 // Fonts
-$arial: 'Arial';
-$roboto: 'Roboto';
+$manrope: 'Manrope';
+$cera-cond-pro: 'CeraCondensedPro';
 
-$main-font: $roboto;
+$main-font: $manrope;
+$second-font: $cera-cond-pro;
 
-// Roboto
+// Manrope
 @font-face {
-  font-family: $roboto;
+  font-family: $manrope;
   font-style: normal;
   font-weight: normal;
-  src: local($roboto + '-Regular'),
-    url($roboto-path + $roboto + '-Regular.woff2') format('woff2'),
-    url($roboto-path + $roboto + '-Regular.woff') format('woff');
+  src: local($manrope + '-Regular'),
+    url($manrope-path + $manrope + '-Regular.woff2') format('woff2'),
+    url($manrope-path + $manrope + '-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $manrope;
+  font-style: normal;
+  font-weight: 600;
+  src: local($manrope + '-SemiBold'),
+    url($manrope-path + $manrope + '-SemiBold.woff2') format('woff2'),
+    url($manrope-path + $manrope + '-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $manrope;
+  font-style: normal;
+  font-weight: 700;
+  src: local($manrope + '-Bold'),
+    url($manrope-path + $manrope + '-Bold.woff2') format('woff2'),
+    url($manrope-path + $manrope + '-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+// CeraCondensedPro
+@font-face {
+  font-family: $cera-cond-pro;
+  font-style: normal;
+  font-weight: 700;
+  src: local($cera-cond-pro + '-Bold'),
+    url($cera-cond-pro-path + $cera-cond-pro + '-Bold.woff2') format('woff2'),
+    url($cera-cond-pro-path + $cera-cond-pro + '-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $cera-cond-pro;
+  font-style: normal;
+  font-weight: 900;
+  src: local($cera-cond-pro + '-Black'),
+    url($cera-cond-pro-path + $cera-cond-pro + '-Black.woff2') format('woff2'),
+    url($cera-cond-pro-path + $cera-cond-pro + '-Black.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $cera-cond-pro;
+  font-style: italic;
+  font-weight: 900;
+  src: local($cera-cond-pro + '-BlackItalic'),
+    url($cera-cond-pro-path + $cera-cond-pro + '-BlackItalic.woff2')
+      format('woff2'),
+    url($cera-cond-pro-path + $cera-cond-pro + '-BlackItalic.woff')
+      format('woff');
   font-display: swap;
 }
