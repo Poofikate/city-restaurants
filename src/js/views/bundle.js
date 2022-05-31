@@ -7,6 +7,7 @@ import '@modules/_svg';
 // components
 import '@components/Modal';
 import '@components/Dropdown';
+import '@components/Header';
 
 // modules
 import '@modules/onLoad';

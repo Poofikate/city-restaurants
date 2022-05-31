@@ -1,0 +1,33 @@
+.header-nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--black);
+  }
+
+  @include max-width($touch) {
+    &__item:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include max-width(768px) {
+    &__list {
+      display: block;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
