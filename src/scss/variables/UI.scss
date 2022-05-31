@@ -9,11 +9,11 @@ button {
   --color-disable: var(--white);
   --color-focus: var(--white);
   --bg-color: var(--primary-default);
-  --bg-color-hover: var(--primary-hover);
+  --bg-color-hover: var(--secondary-8);
   --bg-color-disable: var(--primary-disable);
   --bg-color-focus: var(--primary-active);
   --border-color: var(--primary-default);
-  --border-color-hover: var(--primary-hover);
+  --border-color-hover: var(--secondary-8);
   --border-color-disable: var(--primary-disable);
   --border-width: #{$button-border-width};
   --font-size: #{$button-font-size};
@@ -140,12 +140,14 @@ button {
   }
 
   &--secondary {
-    --color: var(--primary-default);
+    --color: var(--white);
     --color-hover: var(--primary-hover);
     --color-disable: var(--primary-disable);
     --bg-color: transparent;
     --bg-color-hover: transparent;
     --bg-color-disable: transparent;
+    --border-color: var(--white);
+    --border-color-hover: var(--primary-hover);
     --border-color-disable: var(--primary-disable);
     --ripple-color: var(--ripple-secondary);
     --color-focus: var(--color);
@@ -266,14 +268,14 @@ button {
   }
 
   &-icon {
-    --size: 40px;
+    --size: 48px;
     --padding: 10px;
 
     width: var(--size);
     min-width: var(--size);
     height: var(--size);
     min-height: var(--size);
-    border-radius: 50%;
+    border-radius: 4px;
 
     &--prev {
       svg {
