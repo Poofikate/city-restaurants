@@ -1,3 +1,89 @@
 .footer {
-  background-color: #fff;
+  padding: 64px 0;
+  color: var(--secondary-3);
+  background-color: var(--secondary-8);
+
+  &__wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__col {
+    padding: 0 10px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    max-width: 231px;
+    font-size: 14px;
+    line-height: 1.286;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      margin-right: 8px;
+      font-size: 0.875rem;
+      line-height: 1.286;
+      color: var(--secondary-4);
+    }
+
+    a {
+      font-size: 1rem;
+      line-height: 1.25;
+      color: inherit;
+
+      &:hover {
+        color: var(--primary-hover);
+      }
+    }
+  }
+
+  &__button {
+    margin: 0;
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--white);
+
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+
+  @include max-width(992px) {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include max-width(576px) {
+    &__wrap {
+      display: block;
+    }
+
+    &__col {
+      width: 100%;
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
