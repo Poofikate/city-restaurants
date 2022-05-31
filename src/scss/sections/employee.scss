@@ -1,0 +1,46 @@
+.employee {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 405px;
+    margin-right: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 4px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 530px;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 48px 0;
+    margin: -10px -23px;
+  }
+
+  &__item {
+    padding: 10px 23px;
+  }
+
+  @include max-width(768px) {
+    &__wrapper {
+      display: block;
+    }
+
+    &__photo {
+      margin-bottom: 30px;
+    }
+  }
+}

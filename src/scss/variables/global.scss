@@ -49,17 +49,17 @@ main {
   margin: 0 auto;
 }
 
-// section {
-//   padding: $section-padding;
+section {
+  padding: $section-padding;
 
-//   @include max-width($tablet) {
-//     padding: $section-padding-tablet;
-//   }
+  @include max-width($tablet) {
+    padding: $section-padding-tablet;
+  }
 
-//   @include max-width($phone) {
-//     padding: $section-padding-phone;
-//   }
-// }
+  @include max-width($phone) {
+    padding: $section-padding-phone;
+  }
+}
 
 picture {
   display: block;
