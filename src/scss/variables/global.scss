@@ -7,8 +7,8 @@
 }
 
 html {
-  --main-color: var(--secondary-9);
-  --bg-color: var(--bg-main);
+  --main-color: var(--secondary-7);
+  --bg-color: var(--white);
   --header-color: var(--white);
 
   @include defineColorRGB(--primary-disable, $primary-disable);

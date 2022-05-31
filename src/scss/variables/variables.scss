@@ -1,27 +1,32 @@
 /* Colors */
 $white: #fff;
 $black: #000;
-$red: #e60000;
+$red: #f00;
 $gray: #666;
 $gray-light: #999;
 $gray-dark: #444;
 $accent: #2d376a;
 $green: #008000;
 
-$primary-default: #7443ff;
-$primary-hover: #875cff;
-$primary-active: #6132e6;
-$primary-disable: #beadee;
-$primary-gradient: linear-gradient(180deg, #9975ff 0%, #6332f0 100%);
+$primary-default: #e4002b;
+$primary-hover: lighten($primary-default, 10%);
+$primary-active: darken($primary-default, 10%);
+$primary-disable: lighten($primary-default, 40%);
+$primary-gradient: linear-gradient(
+  92.49deg,
+  #e4002b 13.28%,
+  #e40052 51.93%,
+  rgba(228, 0, 82, 0.68) 67.6%
+);
 $secondary-1: #f4f7fe;
-$secondary-2: #e1e9f8;
-$secondary-3: #c9d4ea;
-$secondary-4: #b0bbd5;
-$secondary-5: #8f9bba;
-$secondary-6: #68769f;
-$secondary-7: #485585;
-$secondary-8: #2d396b;
-$secondary-9: #1b2559;
+$secondary-2: #f2f2f2;
+$secondary-3: #e0e0e0;
+$secondary-4: #bdbdbd;
+$secondary-5: #828282;
+$secondary-6: #4f4f4f;
+$secondary-7: #333;
+$secondary-8: #242424;
+$secondary-9: #161616;
 $success: #01b574;
 $error: #e04245;
 $progress: #f2994a;
