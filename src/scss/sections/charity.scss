@@ -1,0 +1,27 @@
+.charity {
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 565px;
+  }
+
+  &__text {
+    p {
+      line-height: 1.5;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include max-width(992px) {
+    &__wrapper {
+      display: block;
+    }
+  }
+}
