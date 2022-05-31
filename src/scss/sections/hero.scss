@@ -1,0 +1,30 @@
+.hero {
+  height: 100vh;
+  padding: 20px 0;
+  background: url('../img/hero-bg.jpg') right 30% top no-repeat;
+  background-size: cover;
+
+  &__container,
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-style: italic;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin: 0;
+  }
+
+  @include max-width(768px) {
+    background-position: right 35% top;
+  }
+}
