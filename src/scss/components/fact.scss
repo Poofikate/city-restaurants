@@ -1,0 +1,18 @@
+.fact {
+  &__value {
+    font: 900 4rem / 1.2 $second-font;
+    color: var(--primary-default);
+  }
+
+  &__descr {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $secondary-6;
+  }
+
+  @include max-width(992px) {
+    &__value {
+      font-size: 3.2rem;
+    }
+  }
+}
