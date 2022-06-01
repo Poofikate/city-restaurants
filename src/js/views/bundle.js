@@ -13,4 +13,4 @@ import '@components/Header';
 import '@modules/onLoad';
 
 // sliders
-import '../sliders/history-slider';
+import '@components/sliders/history-slider';
