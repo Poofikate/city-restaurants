@@ -1,0 +1,36 @@
+.history {
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__button-wrap {
+    display: flex;
+    flex-shrink: 1;
+    align-items: flex-start;
+  }
+
+  &__button {
+    border: 1px solid #e4002b;
+    border-radius: 4px;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      fill: var(--secondary-7);
+    }
+  }
+
+  &__button--prev {
+    margin-right: 20px;
+  }
+}

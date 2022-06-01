@@ -1,0 +1,102 @@
+.card-event {
+  &:hover {
+    cursor: pointer;
+
+    .card-event {
+      &__banner img {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+        transform: scale(1.05);
+      }
+
+      &__title {
+        font-size: 4rem;
+        color: var(--primary-default);
+      }
+
+      &__dividing::after {
+        background-color: var(--primary-default);
+      }
+
+      &__descr {
+        font-size: 1rem;
+        color: var(--secondary-7);
+      }
+    }
+  }
+
+  &__banner {
+    max-width: 304px;
+    max-height: 304px;
+    line-height: 0;
+    border: 1px solid var(--secondary-2);
+    border-radius: 4px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--secondary-2);
+      border-radius: 4px;
+      transition-duration: 0.3s;
+      transition-property: transform, box-shadow;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 72px;
+    font: 900 2.5rem / 1 $second-font;
+    color: var(--secondary-5);
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+    transition-property: font-size, color;
+  }
+
+  &__dividing {
+    position: relative;
+    height: 13px;
+    margin: 27px 0 30px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 13px;
+      height: 13px;
+      content: '';
+      background-color: var(--white);
+      border: 1px solid var(--primary-default);
+      border-radius: 50%;
+      transition-duration: 0.3s;
+      transition-property: background-color;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: calc(100% + 35px);
+      height: 1px;
+      content: '';
+      background-color: var(--secondary-4);
+    }
+
+    &--full-line::before {
+      width: 100%;
+    }
+  }
+
+  &__descr {
+    font-size: 0.875rem;
+    line-height: 1.429;
+    transition-duration: 0.3s;
+    transition-property: font-size, color;
+  }
+}
