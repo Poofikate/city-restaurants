@@ -140,13 +140,13 @@ button {
   }
 
   &--secondary {
-    --color: var(--white);
-    --color-hover: var(--primary-hover);
+    --color: var(--primary-default);
+    --color-hover: var(--white);
     --color-disable: var(--primary-disable);
     --bg-color: transparent;
-    --bg-color-hover: transparent;
+    --bg-color-hover: var(--primary-default);
     --bg-color-disable: transparent;
-    --border-color: var(--white);
+    --border-color: var(--primary-default);
     --border-color-hover: var(--primary-hover);
     --border-color-disable: var(--primary-disable);
     --ripple-color: var(--ripple-secondary);
