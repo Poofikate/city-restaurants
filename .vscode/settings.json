@@ -2,8 +2,8 @@
   "editor.minimap.enabled": true,
   "breadcrumbs.enabled": true,
   "window.menuBarVisibility": "default",
-  // "workbench.activityBar.visible": false,
-  "editor.fontSize": 16,
+  "workbench.activityBar.visible": false,
+  "editor.fontSize": 20,
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
   "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
@@ -39,9 +39,9 @@
       }
     ]
   },
-  "debug.console.fontSize": 14,
-  "markdown.preview.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
+  "debug.console.fontSize": 20,
+  "markdown.preview.fontSize": 20,
+  "terminal.integrated.fontSize": 20,
   "emmet.preferences": {
     "filter.commentBefore": "<!-- [CLASS] --> \n",
     "filter.commentAfter": " <!-- ./ End of [CLASS] -->"
