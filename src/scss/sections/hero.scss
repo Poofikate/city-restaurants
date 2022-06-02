@@ -27,4 +27,10 @@
   @include max-width(768px) {
     background-position: right 35% top;
   }
+
+  @include max-width(480px) {
+    &__title {
+      font-size: 3rem;
+    }
+  }
 }
