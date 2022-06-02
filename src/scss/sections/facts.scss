@@ -33,6 +33,11 @@
     &__item {
       padding: 0 20px 30px;
     }
+
+    &__photo {
+      margin-top: 2rem;
+      margin-left: 0;
+    }
   }
 
   @include max-width(768px) {
@@ -50,12 +55,12 @@
   @include max-width(480px) {
     &__list {
       max-width: 100%;
-      margin: 0;
+      margin: 0 -5px -20px -5px;
     }
 
     &__item {
       width: 50%;
-      padding: 0 10px 30px 10px;
+      padding: 0 5px 20px 5px;
     }
   }
 }
