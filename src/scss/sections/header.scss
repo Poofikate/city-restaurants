@@ -12,6 +12,17 @@
     align-items: center;
   }
 
+  &__logo {
+    width: 60px;
+    height: 60px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__menu {
     width: 100%;
   }
