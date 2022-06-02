@@ -1,5 +1,7 @@
 .hero {
-  height: var(--vh);
+  --hero-height: calc(var(--vh) - var(--header-height));
+
+  height: var(--hero-height);
   padding: 20px 0;
   background: url('../img/hero-bg.jpg') right 30% top no-repeat;
   background-size: cover;
