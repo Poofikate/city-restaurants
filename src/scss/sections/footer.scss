@@ -93,7 +93,7 @@
   }
 
   @include max-width(992px) {
-    padding: 40px;
+    padding: 40px 0;
 
     &__wrap {
       flex-wrap: wrap;
@@ -109,6 +109,7 @@
   @include max-width(576px) {
     &__wrap {
       display: block;
+      margin-bottom: 0;
     }
 
     &__col {
