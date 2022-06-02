@@ -1,4 +1,8 @@
 .facts {
+  @include min-width($tablet) {
+    padding-bottom: 15px;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
