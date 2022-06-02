@@ -18,6 +18,8 @@ html {
   @include defineColorRGB(--error, $error);
   @include defineColorRGB(--black, $black);
 
+  scroll-behavior: smooth;
+
   &:not(.is-ready) {
     * {
       transition: none !important;
