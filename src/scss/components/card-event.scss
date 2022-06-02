@@ -9,8 +9,8 @@
       }
 
       &__title {
-        font-size: 4rem;
         color: var(--primary-default);
+        transform: scale(1.6);
       }
 
       &__dividing::after {
@@ -18,15 +18,13 @@
       }
 
       &__descr {
-        font-size: 1rem;
         color: var(--secondary-7);
+        transform: scale(1.14);
       }
     }
   }
 
   &__banner {
-    max-width: 304px;
-    max-height: 304px;
     line-height: 0;
     border: 1px solid var(--secondary-2);
     border-radius: 4px;
@@ -43,6 +41,7 @@
   }
 
   &__info {
+    padding-top: 40px;
     text-align: center;
   }
 
@@ -50,12 +49,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 72px;
     font: 900 2.5rem / 1 $second-font;
     color: var(--secondary-5);
     text-transform: uppercase;
     transition-duration: 0.3s;
-    transition-property: font-size, color;
+    transition-property: transform, color;
+    transform-origin: center center;
   }
 
   &__dividing {
@@ -94,18 +93,10 @@
   }
 
   &__descr {
-    // Временное решение
-    // Нужно чтобы страница не прыгала из-зи увеличения размера шрифтп при наведении. Сейчас блок в потоке документа.
-    height: 120px;
     font-size: 0.875rem;
     line-height: 1.429;
     transition-duration: 0.3s;
-    transition-property: font-size, color;
-  }
-
-  @include max-width($touch) {
-    &__descr {
-      height: 90px;
-    }
+    transition-property: transform, color;
+    transform-origin: center center;
   }
 }
