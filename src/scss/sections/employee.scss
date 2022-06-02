@@ -28,15 +28,18 @@
     line-height: 1.5;
   }
 
+  &__statistics {
+    padding: 34px 0 45px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 48px 0;
     margin: -10px -23px;
   }
 
   &__item {
-    padding: 10px 23px;
+    margin: 10px 23px;
   }
 
   &__button {
@@ -44,7 +47,7 @@
   }
 
   @include max-width($tablet) {
-    &__list {
+    &__statistics {
       padding: 24px 0;
     }
   }
