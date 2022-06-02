@@ -12,10 +12,10 @@
 
   &__text {
     padding-bottom: 16px;
-    margin-bottom: -30px;
+    margin-bottom: -24px;
 
     p {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
       line-height: 1.5;
     }
   }
@@ -54,6 +54,19 @@
   @include max-width(992px) {
     &__wrapper {
       display: block;
+    }
+
+    &__info {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin-bottom: -16px;
+
+      p {
+        margin-bottom: 16px;
+      }
     }
   }
 }
