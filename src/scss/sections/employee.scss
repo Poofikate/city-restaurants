@@ -8,7 +8,7 @@
   &__photo {
     width: 100%;
     max-width: 405px;
-    margin-right: 1rem;
+    margin-right: 2rem;
     overflow: hidden;
     line-height: 0;
     border-radius: 4px;
@@ -17,6 +17,7 @@
   &__info {
     width: 100%;
     max-width: 530px;
+    overflow: hidden;
   }
 
   &__text {
@@ -32,6 +33,16 @@
 
   &__item {
     padding: 10px 23px;
+  }
+
+  &__button {
+    margin: 0;
+  }
+
+  @include max-width($tablet) {
+    &__list {
+      padding: 24px 0;
+    }
   }
 
   @include max-width(768px) {
