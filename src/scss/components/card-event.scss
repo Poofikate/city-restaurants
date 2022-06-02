@@ -67,8 +67,8 @@
       position: absolute;
       top: 0;
       left: 50%;
-      width: 13px;
-      height: 13px;
+      width: 11px;
+      height: 11px;
       content: '';
       background-color: var(--white);
       border: 1px solid var(--primary-default);
@@ -101,5 +101,11 @@
     line-height: 1.429;
     transition-duration: 0.3s;
     transition-property: font-size, color;
+  }
+
+  @include max-width($touch) {
+    &__descr {
+      height: 90px;
+    }
   }
 }
