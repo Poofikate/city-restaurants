@@ -15,3 +15,7 @@ import '@modules/onLoad';
 
 // sliders
 import '@components/sliders/history-slider';
+
+// polyfills
+import '../polyfills/smoothscroll';
+import '../polyfills/stickyfill';
