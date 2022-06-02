@@ -1,7 +1,16 @@
 .footer {
   padding: 64px 0;
+  margin-top: 80px;
   color: var(--secondary-3);
   background-color: var(--secondary-8);
+
+  @include max-width($tablet) {
+    margin-top: 60px;
+  }
+
+  @include max-width($phone) {
+    margin-top: 40px;
+  }
 
   &__wrap {
     display: flex;
@@ -11,6 +20,12 @@
 
   &__col {
     padding: 0 10px;
+
+    @include min-width(992px) {
+      &:first-child {
+        margin-right: 42px;
+      }
+    }
   }
 
   &__title {
@@ -52,7 +67,10 @@
   }
 
   &__button {
+    padding: 16px 24px;
     margin: 0;
+    font-size: 14px;
+    font-weight: 600;
     color: var(--white);
     background-color: transparent;
     border-color: var(--white);
@@ -63,8 +81,11 @@
   }
 
   @include max-width(992px) {
+    padding: 40px;
+
     &__wrap {
       flex-wrap: wrap;
+      margin-bottom: -20px;
     }
 
     &__col {
