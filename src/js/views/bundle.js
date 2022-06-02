@@ -7,8 +7,8 @@ import '@modules/_svg';
 // components
 import '@components/Modal';
 import '@components/Dropdown';
-import '@components/Header';
 import '@components/ShowMore';
+import '@components/Menu';
 
 // modules
 import '@modules/onLoad';
