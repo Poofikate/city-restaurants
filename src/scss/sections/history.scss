@@ -21,14 +21,14 @@
   }
 
   &__button {
+    padding: 0;
     margin: 0;
     color: var(--secondary-7);
     border: 1px solid #e4002b;
     border-radius: 4px;
 
     svg {
-      width: 12px;
-      height: 12px;
+      margin: auto;
     }
 
     &--prev {
@@ -39,8 +39,6 @@
   @include max-width($touch) {
     &__button {
       --size: 30px;
-
-      padding: 1em;
 
       &--prev {
         margin-right: 15px;
