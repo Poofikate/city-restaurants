@@ -59,15 +59,15 @@
 
   &__dividing {
     position: relative;
-    height: 13px;
+    height: 14px;
     margin: 27px 0 30px;
 
     &::after {
       position: absolute;
       top: 0;
       left: 50%;
-      width: 11px;
-      height: 11px;
+      width: 12px;
+      height: 12px;
       content: '';
       background-color: var(--white);
       border: 1px solid var(--primary-default);
@@ -81,7 +81,7 @@
       position: absolute;
       top: 8px;
       left: 0;
-      width: calc(100% + 35px);
+      width: calc(100% + 34px);
       height: 1px;
       content: '';
       background-color: var(--secondary-4);
