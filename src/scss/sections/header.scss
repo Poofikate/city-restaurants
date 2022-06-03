@@ -7,6 +7,10 @@
   padding: 10px 0;
   background-color: var(--white);
 
+  &.fixed {
+    box-shadow: 0 2px 12px 2px rgb(0 0 0 / 18%);
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
