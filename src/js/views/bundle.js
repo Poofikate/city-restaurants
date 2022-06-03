@@ -9,6 +9,7 @@ import '@components/Modal';
 import '@components/Dropdown';
 import '@components/ShowMore';
 import '@components/Menu';
+import '@components/Header';
 
 // modules
 import '@modules/onLoad';
